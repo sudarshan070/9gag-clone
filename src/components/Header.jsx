@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  FaAppStore,
-  FaAppStoreIos,
-  FaComment,
-  FaHeart,
-  FaQuestion,
-  FaShoppingBasket,
-  FaShoppingCart,
-} from "react-icons/fa";
+import { FaComment, FaHeart, FaQuestion, FaShoppingCart } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 

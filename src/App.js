@@ -1,10 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 import Header from './components/Header'
 
 function App() {
   return (
-    <div >
+    <BrowserRouter >
       <Header />
-    </div>
+      <Dashboard />
+    </BrowserRouter>
   );
 }
 
