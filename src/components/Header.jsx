@@ -2,6 +2,8 @@ import React from "react";
 import { FaComment, FaHeart, FaQuestion, FaShoppingCart } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
+import Login from "./Login";
+import SignUp from "./SignupModal";
 
 function Header() {
   return (
@@ -39,18 +41,8 @@ function Header() {
           <FaMoon style={{ margin: "0 1rem" }} />
           <FaSearch style={{ margin: "0 1rem" }} />
           <FaComment style={{ margin: "0 1rem" }} />
-          <button
-            className="btn text-white mx-2"
-            style={{ fontSize: "14px", fontWeight: "100" }}
-          >
-            Login
-          </button>
-          <button
-            className="btn btn-primary mx-2"
-            style={{ fontSize: "14px", fontWeight: "300" }}
-          >
-            Sign up
-          </button>
+          <Login />
+          <SignUp />
         </div>
       </div>
     </header>
