@@ -1,4 +1,5 @@
 import React from "react";
+import { Badge } from "react-bootstrap";
 import {
   FaChartLine,
   FaCommentAlt,
@@ -54,7 +55,7 @@ export default function LeftSideBar() {
             fontSize: "14px",
           }}
         >
-          <FaCommentAlt /> Boards
+          <FaCommentAlt /> Boards <Badge variant="secondary">New</Badge>
         </Link>
         <Link
           className="d-block p-2 leftsidebar-hover"
