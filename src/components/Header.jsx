@@ -1,19 +1,13 @@
 import React from "react";
-import {
-  FaAppStore,
-  FaAppStoreIos,
-  FaComment,
-  FaHeart,
-  FaQuestion,
-  FaShoppingBasket,
-  FaShoppingCart,
-} from "react-icons/fa";
+import { FaComment, FaHeart, FaQuestion, FaShoppingCart } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
+import Login from "./Login";
+import SignUp from "./SignupModal";
 
 function Header() {
   return (
-    <header className="bg-dark text-white ">
+    <header className="bg-dark text-white position-fixed header">
       <div className="container-xl py-2 d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <div className="mr-2 logo">
@@ -47,18 +41,8 @@ function Header() {
           <FaMoon style={{ margin: "0 1rem" }} />
           <FaSearch style={{ margin: "0 1rem" }} />
           <FaComment style={{ margin: "0 1rem" }} />
-          <button
-            className="btn text-white mx-2"
-            style={{ fontSize: "14px", fontWeight: "100" }}
-          >
-            Login
-          </button>
-          <button
-            className="btn btn-primary mx-2"
-            style={{ fontSize: "14px", fontWeight: "300" }}
-          >
-            Sign up
-          </button>
+          <Login />
+          <SignUp />
         </div>
       </div>
     </header>
