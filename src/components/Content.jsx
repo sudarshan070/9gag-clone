@@ -20,8 +20,6 @@ export default class Content extends React.Component {
     const getPosts = async () => {
       this.setState({ loading: true });
       const results = await axios.get("https://9gag.com/v1/featured-posts");
-      console.log(results.data.data.items);
-      console.log(results.data.data.items, "result");
       this.setState({ posts: results.data.data.items });
       this.setState({ loading: false });
     };
@@ -44,7 +42,7 @@ export default class Content extends React.Component {
     return (
       <div style={{ width: "90%" }}>
         <Posts posts={currentPosts} loading={loading} />
-        <Pagination 
+        <Pagination
           postsPerPage={postsPerPage}
           totalPosts={posts.length}
           paginate={paginate}

@@ -14,8 +14,8 @@ function Header() {
             <h1>9GAG</h1>
           </div>
 
-          <ul
-            className="d-flex"
+          <ul 
+            className="d-flex mobile-view"
             style={{ fontSize: "14px", fontWeight: "200" }}
           >
             <li className="mx-2"> Shuffle</li>
